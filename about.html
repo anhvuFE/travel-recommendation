@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelWander — About Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Travel<span>Wander</span></div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-search">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search (beach, temple, country)"
+        />
+        <button class="btn btn-search" id="searchBtn">Search</button>
+        <button class="btn btn-clear" id="clearBtn">Clear</button>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="card-panel">
+        <h2>About TravelWander</h2>
+        <p>
+          TravelWander is a travel recommendation company founded in 2024 with a
+          simple mission: help every traveller discover destinations they will
+          love. We combine curated local knowledge with smart search so that a
+          single keyword can surface the perfect beach, temple or country for
+          your next trip.
+        </p>
+        <p>
+          Our team of travel writers, photographers and destination experts work
+          across the globe to keep our recommendations fresh, honest and
+          inspiring.
+        </p>
+
+        <h2>Guidance for team members</h2>
+        <p>
+          To keep our recommendations consistent and high quality, every team
+          member should follow these guidelines:
+        </p>
+        <ul>
+          <li>
+            Keep destination data in <code>travel_recommendation_api.json</code>
+            — add new entries under <strong>beaches</strong>,
+            <strong>temples</strong> or <strong>countries</strong>.
+          </li>
+          <li>
+            Every recommendation must include a name, a working image URL and a
+            short, factual description (1–2 sentences).
+          </li>
+          <li>
+            Verify that image links load before publishing, and prefer
+            royalty-free sources.
+          </li>
+          <li>
+            Test the search for <strong>beach</strong>, <strong>temple</strong>
+            and <strong>country</strong> after every change.
+          </li>
+          <li>Commit small, descriptive changes and deploy via GitHub Pages.</li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelWander — Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===== Navigation bar: 6 elements =====
+         1) Home  2) About Us  3) Contact Us
+         4) search input  5) Search button  6) Clear button -->
+    <nav class="navbar">
+      <div class="logo">Travel<span>Wander</span></div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-search">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search (beach, temple, country)"
+        />
+        <button class="btn btn-search" id="searchBtn">Search</button>
+        <button class="btn btn-clear" id="clearBtn">Clear</button>
+      </div>
+    </nav>
+
+    <main class="content">
+      <section class="hero">
+        <h1>Find your next adventure</h1>
+        <p>
+          TravelWander helps you discover the world's most breathtaking beaches,
+          ancient temples and unforgettable countries. Type a keyword like
+          <strong>beach</strong>, <strong>temple</strong> or
+          <strong>country</strong> in the search bar above and let us recommend
+          where to go next.
+        </p>
+      </section>
+
+      <!-- Search results are injected here by app.js -->
+      <section class="results" id="results"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
